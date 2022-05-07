@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../favicon.ico">
+    <title>Why use linux?</title>
+    <style>
+        :root {
+            --main-bg-color: #0a192f;
+            --main-header-color: #0e274d;
+            --hello-text: yellow;
+            --name-text: #ccd6f6;
+            --mini-desc-text: #d4892c;
+            --blog-terminal: #2ca114;
+            --desc-text: #8892b0;
+            --blog-bg-color: #091629;
+            --gt: 32px;
+            --gd: 24px;
+            --md: 18px;
+            --sm: 12px;
+            /* font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace; */
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--main-bg-color);
+        }
+
+        header {
+            width: 100vw;
+            min-height: 10vh;
+            background-color: var(--main-header-color);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            margin-left: 14px;
+            color: var(--mini-desc-text);
+            font-family: 'Lato', sans-serif;
+            font-weight: 900;
+            font-size: 28px;
+            margin-top: 18px;
+            margin-bottom: 18px;
+        }
+
+        nav {
+            margin-right: 24px;
+        }
+
+        nav a {
+            color: var(--blog-terminal);
+            font-family: 'Roboto Mono', monospace;
+            margin-left: 12px;
+        }
+
+        main {
+            width: 74vw;
+            margin-left: 13vw;
+            margin-right: 13vw;
+            overflow: hidden;
+        }
+
+        main h1 {
+            color: var(--blog-terminal);
+            font-family: 'Roboto Mono', monospace;
+            text-align: center;
+            margin-right: auto;
+            margin-bottom: 68px;
+        }
+
+        main p {
+            color: white;
+            font-family: 'Lato', sans-serif;
+        }
+
+        @media (max-width: 600px) {
+            .logo {
+                font-size: 6vw;
+            }
+            main {
+            width: 82vw;
+            margin-left: 9vw;
+            margin-right: 19vw;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Santiago Amaya</div>
+        <nav>
+            <ul>
+                <a href="../index.html">home</a>
+                <a href="../work-in-progress.html">projects</a>
+                <a href="../index.html">contact</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Article template</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore at rerum! Distinctio nihil, quaerat architecto dignissimos omnis, sint inventore debitis repellendus quam fuga error. Atque sint ut magni fuga.</p>
+    </main>
+</body>
+</html>
