@@ -17,7 +17,7 @@
 body {
     margin: 0;
     background-color: var(--main-bg-color);
-    height: 200vh;
+    min-height: 100vh;
 }
 
 main {
@@ -98,6 +98,7 @@ margin-top: 64px;
     height: 100%;
     margin-top: -1px;
     background-color: var(--blog-bg-color);
+    padding-bottom: 32px;
 }
 
 .blog h1 {
@@ -117,18 +118,27 @@ hr {
 }
 
 .article-container {
-    margin-left: 12vw;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80vw;
+}
+
+.article-link-container {
+    width: 24vw;
 }
 
 article {
-    width: 76vw;
+    width: 24vw;
     border: solid 1px var(--blog-terminal);
     border-radius: 10px;
     overflow: hidden;
+    margin-bottom: 24px;
 }
 
 .article-title-container {
-    height: 28px;
+    min-height: 28px;
     margin: 0px;
     background-color: var(--blog-terminal);
     color: var(--blog-bg-color);
@@ -156,6 +166,7 @@ article {
     margin-left: 12px;
     margin-top: 12px;
     margin-bottom: 8px;
+    text-decoration: underline;
 }
 
 @media (max-width: 600px) {
@@ -178,4 +189,20 @@ article {
         .separator {
             margin: 0;
         }
+
+    .article-container {
+        width: 90vw;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .blog a {
+        display: flex;
+        justify-content: center;
+        width: 90vw;
+    }
+        
+    article {
+        width: 90vw;
+    }
 }

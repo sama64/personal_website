@@ -1,0 +1,155 @@
+:root {
+    --main-bg-color: #0a192f;
+    --main-header-color: #0e274d;
+    --hello-text: yellow;
+    --name-text: #ccd6f6;
+    /* --mini-desc-text: #d4892c; */
+    --mini-desc-text: #d47821;
+    --blog-terminal: #2ca114;
+    --terminal-clear: #23b107;
+    --desc-text: #8892b0;
+    --blog-bg-color: #091629;
+    --menu-color: #16263d;
+    --menu-border-color: grey;
+    --gt: 32px;
+    --gd: 24px;
+    --md: 18px;
+    --sm: 12px;
+    /* font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace; */
+}
+
+body {
+    margin: 0;
+    background-color: var(--main-bg-color);
+    min-height: 100vh;
+}
+
+header {
+    width: 100vw;
+    max-height: 10vh;
+    background-color: var(--main-header-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo-container {
+    text-decoration: none;
+}
+
+.logo {
+    margin-left: 14px;
+    color: var(--mini-desc-text);
+    /* font-family: 'Lato', sans-serif; */
+    font-family: 'Ubuntu Mono', monospace;
+    font-weight: 700;
+    font-size: 28px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    text-shadow: 3px 2px #663b13;
+}
+
+.nav-toggle svg {
+    display: none;
+}
+
+.nav-checkbox {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    margin-right: 20px;
+}
+
+.nav-menu li {
+    margin-left: 12px;
+}
+
+nav a {
+    color: var(--terminal-clear);
+    font-family: 'Roboto Mono', monospace;
+    font-size: 18px;
+}
+
+
+main {
+    width: 74vw;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    margin-bottom: 100px;
+    overflow: hidden;
+}
+
+main h1 {
+    color: var(--blog-terminal);
+    font-family: 'Roboto Mono', monospace;
+    text-align: center;
+    margin-right: auto;
+    margin-bottom: 68px;
+    text-shadow: 2px 2px #15490a;
+}
+
+main p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+}
+
+@media (max-width: 600px) {
+    .logo {
+        font-size: 6vw;
+        margin-right: 0;
+    }
+    main {
+    width: 82vw;
+    margin-left: 9vw;
+    margin-right: 19vw;
+    }
+    
+    .nav-toggle {
+        position: absolute;
+        margin: 0 12px;
+        margin-top: 1vh;
+        right: 0;
+        top: 0;
+    }
+    
+    .nav-toggle svg {
+        width: 32px;
+        fill: var(--blog-terminal);
+        display: block;
+    }
+    
+    .nav-checkbox {
+        display: none;
+    }
+    
+    .nav-menu {
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        gap: 6px;
+        align-items: center;
+        padding: 12px;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        margin: 4px;
+        margin-top: 52px;
+        margin-right: 12px;
+        border: 2px var(--menu-border-color) solid;
+        background-color: var(--menu-color);
+        list-style: none;
+    }
+
+    .nav-menu li {
+        margin: 0;
+    }
+    
+    #check:checked ~ ul.nav-menu {
+        display: flex;
+    }
+}

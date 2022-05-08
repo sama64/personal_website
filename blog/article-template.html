@@ -6,102 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Roboto+Mono&family=Ubuntu+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+
     <link rel="icon" href="../favicon.ico">
-    <title>Why use linux?</title>
-    <style>
-        :root {
-            --main-bg-color: #0a192f;
-            --main-header-color: #0e274d;
-            --hello-text: yellow;
-            --name-text: #ccd6f6;
-            --mini-desc-text: #d4892c;
-            --blog-terminal: #2ca114;
-            --desc-text: #8892b0;
-            --blog-bg-color: #091629;
-            --gt: 32px;
-            --gd: 24px;
-            --md: 18px;
-            --sm: 12px;
-            /* font-family: Fira Code,Monaco,Consolas,Ubuntu Mono,monospace; */
-        }
-
-        body {
-            margin: 0;
-            background-color: var(--main-bg-color);
-        }
-
-        header {
-            width: 100vw;
-            min-height: 10vh;
-            background-color: var(--main-header-color);
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            margin-left: 14px;
-            color: var(--mini-desc-text);
-            font-family: 'Lato', sans-serif;
-            font-weight: 900;
-            font-size: 28px;
-            margin-top: 18px;
-            margin-bottom: 18px;
-        }
-
-        nav {
-            margin-right: 24px;
-        }
-
-        nav a {
-            color: var(--blog-terminal);
-            font-family: 'Roboto Mono', monospace;
-            margin-left: 12px;
-        }
-
-        main {
-            width: 74vw;
-            margin-left: 13vw;
-            margin-right: 13vw;
-            overflow: hidden;
-        }
-
-        main h1 {
-            color: var(--blog-terminal);
-            font-family: 'Roboto Mono', monospace;
-            text-align: center;
-            margin-right: auto;
-            margin-bottom: 68px;
-        }
-
-        main p {
-            color: white;
-            font-family: 'Lato', sans-serif;
-        }
-
-        @media (max-width: 600px) {
-            .logo {
-                font-size: 6vw;
-            }
-            main {
-            width: 82vw;
-            margin-left: 9vw;
-            margin-right: 19vw;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+    <title>Santiago Amaya</title>
 </head>
 <body>
     <header>
-        <div class="logo">Santiago Amaya</div>
+        <a href="https://santiagoamaya.com" class="logo-container"><div class="logo">Santiago Amaya</div></a>
         <nav>
-            <ul>
-                <a href="../index.html">home</a>
-                <a href="../work-in-progress.html">projects</a>
-                <a href="../index.html">contact</a>
+            <input type="checkbox" id="check" class="nav-checkbox">
+            <label for="check" class="nav-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 1792 1792"><path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"/></svg>
+            </label>
+            <ul class="nav-menu">
+                <li><a href="../index.html">home</a></li>
+                <li><a href="../work-in-progress.html">projects</a></li>
+                <li><a href="../index.html">contact</a></li>
             </ul>
         </nav>
     </header>
